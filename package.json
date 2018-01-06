@@ -15,9 +15,12 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "husky": "^0.14.3",
     "lint-staged": "^6.0.0",
-    "prettier": "^1.9.2"
+    "prettier": "^1.9.2",
+    "react-test-renderer": "^16.2.0"
   },
   "prettier": {
     "semi": false,
@@ -25,7 +28,7 @@
     "trailingComma": "es5"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}":[
+    "src/**/*.{js,jsx,json,css}": [
       "prettier --write",
       "git add"
     ]
