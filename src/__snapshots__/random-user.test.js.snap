@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correct user 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    Get User
+  </button>
+  <dl>
+    <dt>
+      ID:
+    </dt>
+    <dd>
+      42
+    </dd>
+    <dt>
+      Name:
+    </dt>
+    <dd>
+      Arthur Dent
+    </dd>
+    <dt>
+      Username:
+    </dt>
+    <dd>
+      panickedBrit
+    </dd>
+    <dt>
+      Email:
+    </dt>
+    <dd>
+      DentedFord42@yahoo.com
+    </dd>
+  </dl>
+</div>
+`;

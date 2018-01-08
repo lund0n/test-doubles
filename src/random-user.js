@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import { func } from 'prop-types'
+import User from './user'
 
 export default class RandomUser extends Component {
   static propTypes = {
-    getUser: func,
+    getUser: func.isRequired,
   }
   state = {
     id: 0,
@@ -12,11 +13,9 @@ export default class RandomUser extends Component {
     email: '',
   }
   updateUser = () => {
-    this.props
-      .getUser()
-      .then(({ id, name, username, email }) =>
-        this.setState({ id, name, username, email })
-      )
+    this.props.getUser().then(({ id, name, username, email }) => {
+      this.setState({ id, name, username, email })
+    })
   }
   componentDidMount() {
     this.updateUser()
@@ -26,16 +25,7 @@ export default class RandomUser extends Component {
     return (
       <div>
         <button onClick={this.updateUser}>Get User</button>
-        <dl>
-          <dt>ID:</dt>
-          <dd>{id}</dd>
-          <dt>Name:</dt>
-          <dd>{name}</dd>
-          <dt>Username:</dt>
-          <dd>{username}</dd>
-          <dt>Email:</dt>
-          <dd>{email}</dd>
-        </dl>
+        <User id={id} name={name} username={username} email={email} />
       </div>
     )
   }

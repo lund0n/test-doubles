@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<dl>
+  <dt>
+    ID:
+  </dt>
+  <dd>
+    42
+  </dd>
+  <dt>
+    Name:
+  </dt>
+  <dd>
+    Arthur Dent
+  </dd>
+  <dt>
+    Username:
+  </dt>
+  <dd>
+    panickedBrit
+  </dd>
+  <dt>
+    Email:
+  </dt>
+  <dd>
+    DentedFord42@yahoo.com
+  </dd>
+</dl>
+`;
